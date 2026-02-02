@@ -1,36 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
+import Hero from "@/components/Hero";
 
 export default function Home() {
     return (
         <>
-            <section id="hero">
-                <div
-                    className="container flex flex-col justify-center items-center gap-8 py-40 text-center"
-                    style={{
-                        backgroundImage:
-                            "url(https://images.unsplash.com/photo-1481833761820-0509d3217039)",
-                        backgroundPosition: "center",
-                        backgroundSize: "cover",
-                        backgroundColor: "rgba(0, 0, 0, 0.5)",
-                        backgroundBlendMode: "multiply",
-                    }}
-                >
-                    <h1 className="text-5xl">
-                        Där generationer möts,
-                        <br /> trivs, äter och dricker gott.
-                    </h1>
-
-                    <div className="flex gap-8">
-                        <Link href="/" className="btn-primary">
-                            Boka bord
-                        </Link>
-                        <Link href="/" className="btn-primary">
-                            Boka vårkråka
-                        </Link>
-                    </div>
-                </div>
-            </section>
+            <Hero />
 
             <section className="py-16">
                 <div className="container flex justify-center">
@@ -102,10 +77,65 @@ export default function Home() {
             <section className="py-16 text-black">
                 <div className="container grid grid-cols-2 gap-4">
                     <div className="flex flex-col gap-4 p-8 min-h-112.5 bg-(--pink)">
-                        <h2 className="text-center text-2xl">Öppettider</h2>
+                        <h2 className="text-center text-2xl mb-8">
+                            Öppettider
+                        </h2>
+                        <div className="flex justify-between items-center border-b border-dotted">
+                            <span>Måndag & Tisdag</span>
+                            <span>11:30 - 23:00</span>
+                        </div>
+                        <div className="flex justify-between items-center border-b border-dotted">
+                            <span>Onsdag & Torsdag</span>
+                            <span>11:30 - 00:00</span>
+                        </div>
+                        <div className="flex justify-between items-center border-b border-dotted">
+                            <span>Fredag</span>
+                            <span>11:30 - 01:00</span>
+                        </div>
+                        <div className="flex justify-between items-center border-b border-dotted">
+                            <span>Lördag</span>
+                            <span>12:00 - 01:00</span>
+                        </div>
+                        <div className="flex justify-between items-center border-b border-dotted">
+                            <span>Söndag</span>
+                            <span>12:00 - 23:00</span>
+                        </div>
                     </div>
-                    <div className="flex flex-col gap-4 p-8 min-h-112.5 bg-(--yellow)">
-                        <h2 className="text-center text-2xl">Vår meny</h2>
+                    <div className="flex flex-col items-center gap-4 p-8 min-h-112.5 bg-(--yellow)">
+                        <h2 className="text-center text-2xl mb-8">Vår meny</h2>
+                        <p className="text-sm max-w-md text-center mb-4">
+                            På Tennstopet hyllar vi svenska mattraditioner med
+                            tidlösa klassiker. Vår á la carte serveras från
+                            öppning, och fortgår hela dagen
+                        </p>
+                        <Link href="#" className="btn-secondary">
+                            Dagens lunch
+                        </Link>
+                        <Link href="#" className="btn-secondary">
+                            A la carte
+                        </Link>
+                        <Link href="#" className="btn-secondary">
+                            Stora sällskap
+                        </Link>
+                    </div>
+                </div>
+            </section>
+
+            <section className="py-16">
+                <div className="container">
+                    <div className="bg-(--yellow) text-black p-8 flex flex-col items-center justify-center gap-4">
+                        <h2 className="text-2xl">Nyhetsbrev</h2>
+                        <p>Nyheter från Tennstopet & Stockholm Krogbolag</p>
+                        <form className="flex flex-col justify-center items-center gap-4 w-full max-w-md">
+                            <input
+                                type="email"
+                                placeholder="Din e-mailadress"
+                                className="bg-white p-3 text-center text-sm w-full"
+                            />
+                            <button type="submit" className="btn-secondary">
+                                Skicka in
+                            </button>
+                        </form>
                     </div>
                 </div>
             </section>
