@@ -10,8 +10,8 @@ export default function Home() {
             <Hero />
 
             <section className="py-16">
-                <div className="container flex justify-center">
-                    <div className="max-w-4xl w-full grid grid-cols-3 gap-4">
+                <div className="container flex justify-center px-4">
+                    <div className="max-w-4xl w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                         <Link href="#">
                             <div className="flex flex-col gap-2 w-full">
                                 <div className="relative aspect-4/5 w-full">
@@ -23,7 +23,9 @@ export default function Home() {
                                     />
                                 </div>
                                 <div className="flex flex-col justify-center items-center text-center px-4">
-                                    <h2 className="text-xl">Platser till vårkråka - 30 mars</h2>
+                                    <h2 className="text-lg md:text-xl">
+                                        Platser till vårkråka - 30 mars
+                                    </h2>
                                     <p>Boka här</p>
                                 </div>
                             </div>
@@ -40,7 +42,7 @@ export default function Home() {
                                     />
                                 </div>
                                 <div className="flex flex-col justify-center items-center text-center px-4">
-                                    <h2 className="text-xl">Skreitorsk på Tennstopet</h2>
+                                    <h2 className="text-lg md:text-xl">Skreitorsk på Tennstopet</h2>
                                     <p>
                                         Finns på a la cartemenyn fr.o.m 19/1, serveras efter
                                         tillgång.
@@ -60,7 +62,7 @@ export default function Home() {
                                     />
                                 </div>
                                 <div className="flex flex-col justify-center items-center text-center px-4">
-                                    <h2 className="text-xl">Vår meny</h2>
+                                    <h2 className="text-lg md:text-xl">Vår meny</h2>
                                     <p>
                                         Vår klassiska a la carte meny med traditionell, svensk
                                         husmanskost
@@ -73,9 +75,9 @@ export default function Home() {
             </section>
 
             <section className="py-16 text-black">
-                <div className="container grid grid-cols-2 gap-4">
-                    <div className="flex flex-col gap-4 p-8 min-h-112.5 bg-(--pink)">
-                        <h2 className="text-center text-2xl mb-8">Öppettider</h2>
+                <div className="container px-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="flex flex-col gap-4 p-6 md:p-8 min-h-112.5 bg-(--pink)">
+                        <h2 className="text-center text-xl md:text-2xl mb-8">Öppettider</h2>
                         <div className="flex justify-between items-center border-b border-dotted">
                             <span>Måndag & Tisdag</span>
                             <span>11:30 - 23:00</span>
@@ -97,9 +99,9 @@ export default function Home() {
                             <span>12:00 - 23:00</span>
                         </div>
                     </div>
-                    <div className="flex flex-col items-center gap-4 p-8 min-h-112.5 bg-(--yellow)">
-                        <h2 className="text-center text-2xl mb-8">Vår meny</h2>
-                        <p className="text-sm max-w-md text-center mb-4">
+                    <div className="flex flex-col items-center gap-4 p-6 md:p-8 min-h-112.5 bg-(--yellow)">
+                        <h2 className="text-center text-xl md:text-2xl mb-8">Vår meny</h2>
+                        <p className="text-sm md:text-base max-w-md text-center mb-4">
                             På Tennstopet hyllar vi svenska mattraditioner med tidlösa klassiker.
                             Vår á la carte serveras från öppning, och fortgår hela dagen
                         </p>
@@ -142,8 +144,8 @@ export default function Home() {
             />
 
             <section className="py-16">
-                <div className="container grid gap-16 text-center text-sm md:text-base md:grid-cols-4">
-                    <div className="flex flex-col gap-3 items-center">
+                <div className="container px-4 grid gap-16 text-center text-sm md:text-base grid-cols-1 md:grid-cols-4">
+                    <div className="flex flex-col gap-3 items-center px-4 md:px-0">
                         <h2 className="text-xl">Dagsaktuella bokningar</h2>
                         <p>Telefon: 08 32 25 18</p>
                         <p>
@@ -161,7 +163,7 @@ export default function Home() {
                         </p>
                     </div>
 
-                    <div className="flex flex-col gap-3 items-center">
+                    <div className="flex flex-col gap-3 items-center px-4 md:px-0">
                         <h2 className="text-xl">
                             Framtida bokningar och bokningar för större sällskap
                         </h2>
@@ -175,7 +177,7 @@ export default function Home() {
                         <p>Vi reserverar inte bord på vår uteservering.</p>
                     </div>
 
-                    <div className="flex flex-col gap-3 items-center">
+                    <div className="flex flex-col gap-3 items-center px-4 md:px-0">
                         <h2 className="text-xl">Övriga frågor</h2>
                         <p>
                             <a href="mailto:info@tennstopet.se" className="underline">
@@ -187,7 +189,7 @@ export default function Home() {
                         </p>
                     </div>
 
-                    <div className="flex flex-col gap-3 items-center">
+                    <div className="flex flex-col gap-3 items-center px-4 md:px-0">
                         <h2 className="text-xl">Adress</h2>
                         <div>
                             <p className="font-semibold">Besöksadress:</p>
