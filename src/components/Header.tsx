@@ -4,6 +4,19 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+const topLinks = ["Maitres", "Presentkort", "Tennstopet Grill"];
+
+const mainNavLinks = [
+    { label: "Öppettider", href: "/" },
+    { label: "Meny", href: "/" },
+    { label: "Kontakt", href: "/" },
+    { label: "Boka bord", href: "/" },
+    { label: "Matkalender", href: "/" },
+    { label: "Våra rum", href: "/" },
+    { label: "Stora sällskap", href: "/" },
+    { label: "Historia", href: "/" },
+];
+
 export default function Header() {
     const [open, setOpen] = useState(false);
 
@@ -43,52 +56,19 @@ export default function Header() {
                             onClick={() => setOpen(false)}
                             className="text-2xl cursor-pointer"
                         >
-                            ×
+                            x
                         </button>
                     </div>
 
                     <nav className="p-4">
                         <ul className="flex flex-col gap-4">
-                            <li>
-                                <Link href="/" onClick={() => setOpen(false)}>
-                                    Öppettider
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/" onClick={() => setOpen(false)}>
-                                    Meny
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/" onClick={() => setOpen(false)}>
-                                    Kontakt
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/" onClick={() => setOpen(false)}>
-                                    Boka bord
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/" onClick={() => setOpen(false)}>
-                                    Matkalender
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/" onClick={() => setOpen(false)}>
-                                    Våra rum
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/" onClick={() => setOpen(false)}>
-                                    Stora sällskap
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/" onClick={() => setOpen(false)}>
-                                    Historia
-                                </Link>
-                            </li>
+                            {mainNavLinks.map((item) => (
+                                <li key={item.label}>
+                                    <Link href={item.href} onClick={() => setOpen(false)}>
+                                        {item.label}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </nav>
                 </aside>
@@ -98,9 +78,9 @@ export default function Header() {
             <div className="hidden md:flex container flex-col divide-y">
                 <div className="w-full flex justify-end items-center py-4 text-sm">
                     <ul className="flex items-center gap-4">
-                        <li>Maitres</li>
-                        <li>Presentkort</li>
-                        <li>Tennstopet Grill</li>
+                        {topLinks.map((t) => (
+                            <li key={t}>{t}</li>
+                        ))}
                     </ul>
                 </div>
                 <div className="grid grid-cols-3 items-center gap-4 py-8 text-center text-sm">
@@ -118,30 +98,11 @@ export default function Header() {
                 </div>
                 <nav className="flex items-center justify-center py-4">
                     <ul className="flex justify-center items-center divide-x">
-                        <li className="px-8">
-                            <Link href="/">Öppettider</Link>
-                        </li>
-                        <li className="px-8">
-                            <Link href="/">Meny</Link>
-                        </li>
-                        <li className="px-8">
-                            <Link href="/">Kontakt</Link>
-                        </li>
-                        <li className="px-8">
-                            <Link href="/">Boka bord</Link>
-                        </li>
-                        <li className="px-8">
-                            <Link href="/">Matkalender</Link>
-                        </li>
-                        <li className="px-8">
-                            <Link href="/">Våra rum</Link>
-                        </li>
-                        <li className="px-8">
-                            <Link href="/">Stora sällskap</Link>
-                        </li>
-                        <li className="px-8">
-                            <Link href="/">Historia</Link>
-                        </li>
+                        {mainNavLinks.map((item) => (
+                            <li key={item.label} className="px-8">
+                                <Link href={item.href}>{item.label}</Link>
+                            </li>
+                        ))}
                     </ul>
                 </nav>
             </div>
