@@ -4,8 +4,6 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const topLinks = ["Maitres", "Presentkort", "Tennstopet Grill"];
-
 const mainNavLinks = [
     { label: "Öppettider", href: "/" },
     { label: "Meny", href: "/" },
@@ -76,13 +74,6 @@ export default function Header() {
 
             {/* Desktop Header */}
             <div className="hidden md:flex container flex-col divide-y">
-                <div className="w-full flex justify-end items-center py-4 text-sm">
-                    <ul className="flex items-center gap-4">
-                        {topLinks.map((t) => (
-                            <li key={t}>{t}</li>
-                        ))}
-                    </ul>
-                </div>
                 <div className="grid grid-cols-3 items-center gap-4 py-8 text-center text-sm">
                     <div className="max-w-sm italic">
                         <p>“Där generationer möts, trivs, äter och dricker gott.”</p>

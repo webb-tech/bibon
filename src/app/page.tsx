@@ -19,7 +19,7 @@ export default function Home() {
                                         src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=800&q=80"
                                         alt="Restaurant interior"
                                         fill
-                                        className="object-cover"
+                                        className="object-cover rounded"
                                     />
                                 </div>
                                 <div className="flex flex-col justify-center items-center text-center px-4">
@@ -38,7 +38,7 @@ export default function Home() {
                                         src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
                                         alt="Fish dish"
                                         fill
-                                        className="object-cover"
+                                        className="object-cover rounded"
                                     />
                                 </div>
                                 <div className="flex flex-col justify-center items-center text-center px-4">
@@ -58,7 +58,7 @@ export default function Home() {
                                         src="https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?auto=format&fit=crop&w=800&q=80"
                                         alt="Menu on table"
                                         fill
-                                        className="object-cover"
+                                        className="object-cover rounded"
                                     />
                                 </div>
                                 <div className="flex flex-col justify-center items-center text-center px-4">
@@ -74,9 +74,9 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="py-16 text-black">
+            <section className="py-16 bg-(--foreground)">
                 <div className="container px-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="flex flex-col gap-4 p-6 md:p-8 min-h-112.5 bg-(--pink)">
+                    <div className="flex flex-col gap-4 p-6 md:p-8 min-h-112.5 bg-(--background) text-(--foreground) rounded">
                         <h2 className="text-center text-xl md:text-2xl mb-8">Öppettider</h2>
                         <div className="flex justify-between items-center border-b border-dotted">
                             <span>Måndag & Tisdag</span>
@@ -99,7 +99,7 @@ export default function Home() {
                             <span>12:00 - 23:00</span>
                         </div>
                     </div>
-                    <div className="flex flex-col items-center gap-4 p-6 md:p-8 min-h-112.5 bg-(--yellow)">
+                    <div className="flex flex-col items-center gap-4 p-6 md:p-8 min-h-112.5 bg-(--background) text-(--foreground) rounded">
                         <h2 className="text-center text-xl md:text-2xl mb-8">Vår meny</h2>
                         <p className="text-sm md:text-base max-w-md text-center mb-4">
                             På Tennstopet hyllar vi svenska mattraditioner med tidlösa klassiker.
@@ -119,6 +119,7 @@ export default function Home() {
             </section>
 
             <ImageGallery
+                className=""
                 images={[
                     {
                         url: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1200&q=80",
@@ -143,7 +144,7 @@ export default function Home() {
                 ]}
             />
 
-            <section className="py-16">
+            <section className="py-16 bg-(--foreground) text-black">
                 <div className="container px-4 grid gap-16 text-center text-sm md:text-base grid-cols-1 md:grid-cols-4">
                     <div className="flex flex-col gap-3 items-center px-4 md:px-0">
                         <h2 className="text-xl">Dagsaktuella bokningar</h2>
