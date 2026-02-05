@@ -93,7 +93,11 @@ export default function Header() {
                         </Link>
                     </div>
                     <div className="italic">
-                        <p>Stockholm, Sverige</p>
+                        <p>
+                            Stockholm,
+                            <br />
+                            Sverige
+                        </p>
                     </div>
                 </div>
                 <nav className="flex items-center justify-center py-4">

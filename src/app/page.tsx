@@ -126,7 +126,7 @@ export default function Home() {
                     },
                     {
                         url: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
-                        alt: " plated dish",
+                        alt: "Plated dish",
                     },
                     {
                         url: "https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?auto=format&fit=crop&w=1200&q=80",
@@ -137,7 +137,7 @@ export default function Home() {
                         alt: "Chef preparing food",
                     },
                     {
-                        url: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
+                        url: "https://images.unsplash.com/photo-1505250469679-203ad9ced0cb?auto=format&fit=crop&w=1200&q=80",
                         alt: "Dessert",
                     },
                 ]}
