@@ -16,8 +16,8 @@ export default function Home() {
                             <div className="flex flex-col gap-2 w-full">
                                 <div className="relative aspect-4/5 w-full">
                                     <Image
-                                        src="https://images.unsplash.com/photo-1481833761820-0509d3217039"
-                                        alt="Image"
+                                        src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=800&q=80"
+                                        alt="Restaurant interior"
                                         fill
                                         className="object-cover"
                                     />
@@ -35,8 +35,8 @@ export default function Home() {
                             <div className="flex flex-col gap-2 w-full">
                                 <div className="relative aspect-4/5 w-full">
                                     <Image
-                                        src="https://images.unsplash.com/photo-1481833761820-0509d3217039"
-                                        alt="Image"
+                                        src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
+                                        alt="Fish dish"
                                         fill
                                         className="object-cover"
                                     />
@@ -55,8 +55,8 @@ export default function Home() {
                             <div className="flex flex-col gap-2 w-full">
                                 <div className="relative aspect-4/5 w-full">
                                     <Image
-                                        src="https://images.unsplash.com/photo-1481833761820-0509d3217039"
-                                        alt="Image"
+                                        src="https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?auto=format&fit=crop&w=800&q=80"
+                                        alt="Menu on table"
                                         fill
                                         className="object-cover"
                                     />
@@ -121,24 +121,24 @@ export default function Home() {
             <ImageGallery
                 images={[
                     {
-                        url: "https://images.unsplash.com/photo-1481833761820-0509d3217039",
-                        alt: "Image 1",
+                        url: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1200&q=80",
+                        alt: "Dining room",
                     },
                     {
-                        url: "https://images.unsplash.com/photo-1481833761820-0509d3217039",
-                        alt: "Image 2",
+                        url: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
+                        alt: " plated dish",
                     },
                     {
-                        url: "https://images.unsplash.com/photo-1481833761820-0509d3217039",
-                        alt: "Image 3",
+                        url: "https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?auto=format&fit=crop&w=1200&q=80",
+                        alt: "Table setting",
                     },
                     {
-                        url: "https://images.unsplash.com/photo-1481833761820-0509d3217039",
-                        alt: "Image 4",
+                        url: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=1200&q=80",
+                        alt: "Chef preparing food",
                     },
                     {
-                        url: "https://images.unsplash.com/photo-1481833761820-0509d3217039",
-                        alt: "Image 5",
+                        url: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
+                        alt: "Dessert",
                     },
                 ]}
             />
