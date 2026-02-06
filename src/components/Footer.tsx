@@ -34,7 +34,7 @@ export default function Footer() {
                     </ul>
                 </nav>
                 <div className="flex justify-center items-center py-8">
-                    <Image src="/logo.png" alt="Logo" width={100} height={50} />
+                    <Image src="/logo-gray.png" alt="Logo" width={100} height={50} />
                 </div>
             </div>
         </footer>

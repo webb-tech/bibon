@@ -4,6 +4,8 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+const topLinks = ["Maitres", "Presentkort", "Tennstopet Grill"];
+
 const mainNavLinks = [
     { label: "Öppettider", href: "/" },
     { label: "Meny", href: "/" },
@@ -23,7 +25,7 @@ export default function Header() {
             {/* Mobile Header */}
             <div className="md:hidden flex items-center justify-between px-4 py-3 border-b">
                 <Link href="/">
-                    <Image src="/logo.png" alt="Logo" width={120} height={45} />
+                    <Image src="/logo-gray.png" alt="Logo" width={120} height={45} />
                 </Link>
 
                 <button
@@ -74,13 +76,22 @@ export default function Header() {
 
             {/* Desktop Header */}
             <div className="hidden md:flex container flex-col divide-y">
-                <div className="grid grid-cols-3 items-center gap-4 py-8 text-center text-sm">
+                <div className="w-full flex justify-end items-center py-4 text-sm">
+                    <ul className="flex items-center gap-4">
+                        {topLinks.map((t) => (
+                            <li key={t}>
+                                <Link href="/">{t}</Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                <div className="grid grid-cols-3 items-center gap-4 py-4 text-center text-sm">
                     <div className="max-w-sm italic">
                         <p>“Där generationer möts, trivs, äter och dricker gott.”</p>
                     </div>
                     <div className="flex justify-center items-center">
                         <Link href="/">
-                            <Image src="/logo.png" alt="Logo" width={200} height={75} />
+                            <Image src="/logo.png" alt="Logo" width={220} height={75} />
                         </Link>
                     </div>
                     <div className="italic">
