@@ -91,7 +91,7 @@ export default function Header() {
                     </div>
                     <div className="flex justify-center items-center">
                         <Link href="/">
-                            <Image src="/logo.png" alt="Logo" width={220} height={75} />
+                            <Image src="/logo-gray.png" alt="Logo" width={220} height={75} />
                         </Link>
                     </div>
                     <div className="italic">
