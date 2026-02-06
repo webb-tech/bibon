@@ -61,7 +61,6 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0.25rem;
     cursor: pointer;
 }
 
@@ -73,6 +72,5 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0.25rem;
     cursor: pointer;
 }
